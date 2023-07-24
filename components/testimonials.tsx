@@ -89,7 +89,7 @@ export default function Testimonials() {
           </div>
 
           {/* Items */}
-          <div className="max-w-sm md:max-w-4xl mx-auto grid gap-2 grid-cols-4 md:grid-cols-5">
+          <div className="max-w-sm md:max-w-4xl mx-auto grid gap-2 grid-cols-4 md:grid-cols-5 hidden">
             {/* Item */}
             <div className="flex items-center justify-center py-2 col-span-2 md:col-auto">
               <svg
@@ -157,7 +157,7 @@ export default function Testimonials() {
           </div>
 
           {/* Testimonials */}
-          <div className="max-w-3xl mx-auto mt-20" data-aos="zoom-y-out">
+          <div className="max-w-3xl mx-auto mt-20 hidden" data-aos="zoom-y-out">
             <div className="relative flex items-start border-2 border-gray-200 rounded bg-white">
               {/* Testimonial */}
               <div className="text-center px-12 py-8 pt-20 mx-4 md:mx-0">

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, Fragment } from "react";
+import { useState, useRef, Fragment, useEffect } from "react";
 import type { StaticImageData } from "next/image";
 import { Dialog, Transition } from "@headlessui/react";
 import Image from "next/image";
@@ -27,6 +27,14 @@ export default function ModalVideo({
   const [modalOpen, setModalOpen] = useState<boolean>(false);
   const videoRef = useRef<HTMLVideoElement>(null);
 
+  useEffect(() => {
+    // scroll to ytplayer when load complete
+    const ytplayer = document.getElementById("ytplayer");
+    if (ytplayer) {
+      ytplayer.scrollIntoView();
+    }
+  }, []);
+
   return (
     <div>
       {/* Video thumbnail */}
@@ -37,6 +45,7 @@ export default function ModalVideo({
           data-aos-delay="450"
         >
           <iframe
+            id="ytplayer"
             style={{ width: "100%", height: "100vh" }}
             src={process.env.CHAT_URL}
             title="YouTube video player"
