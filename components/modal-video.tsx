@@ -28,11 +28,12 @@ export default function ModalVideo({
   const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
-    // scroll to ytplayer when load complete
-    const ytplayer = document.getElementById("ytplayer");
-    if (ytplayer) {
-      ytplayer.scrollIntoView();
-    }
+    window.addEventListener("load", function () {
+      const ytplayer = document.getElementById("ytplayer");
+      if (ytplayer) {
+        ytplayer.scrollIntoView();
+      }
+    });
   }, []);
 
   return (
@@ -44,8 +45,8 @@ export default function ModalVideo({
           data-aos="zoom-y-out"
           data-aos-delay="450"
         >
+          <div id="ytplayer"></div>
           <iframe
-            id="ytplayer"
             style={{ width: "100%", height: "100vh" }}
             src={process.env.CHAT_URL}
             title="YouTube video player"

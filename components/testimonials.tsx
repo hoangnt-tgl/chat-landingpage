@@ -51,39 +51,27 @@ export default function Testimonials() {
             </p>
             <div className="mr-auto text-left">
               <p className="mb-1 text-xs ">
-                1. To access the chat feature on this website, simply navigate
-                to the Chat page. Before beginning your conversation, make sure
-                to select the appropriate language to ensure effective
-                communication.
+                1. Go to the Chat page on the website.
               </p>
               <p className="mb-1 text-xs">
-                2. Initiate a Dialogue: Enter your prompt or question in the
-                designated text box and then press the Enter or Send button to
-                begin a dialogue with ChatGPT.
+                2. Select the language you want to use.
               </p>
               <p className="mb-1 text-xs">
-                3. Review the Reply: After receiving your prompt, ChatGPT will
-                generate a response that will be displayed below the text box.
-                Take a moment to review the reply and read through what Chat GPT
-                has to offer.
+                3. Enter your prompt or question in the text box.
+              </p>
+              <p className="mb-1 text-xs">4. Press the Enter or Send button.</p>
+              <p className="mb-1 text-xs">5. Review the reply from ChatGPT.</p>
+              <p className="mb-1 text-xs">
+                6. To continue the dialogue, enter another prompt or question
+                and press the Enter or Send button again.
               </p>
               <p className="mb-1 text-xs">
-                4. Sustain the Dialogue: To keep the dialogue going, enter
-                another prompt or question into the text box and press the Enter
-                or Send button once more. Chat GPT will then generate a fresh
-                response based on your most recent input.
+                7. To personalize the configuration of your ChatGPT session,
+                click the gear icon and make any necessary changes.
               </p>
               <p className="mb-1 text-xs">
-                5. Personalize the Configuration: To adjust the configuration of
-                your ChatGPT session, such as changing the maximum length of the
-                response or the formatting of the output, you can utilize the
-                settings menu. Click the gear icon to access the settings and
-                make any necessary changes.
-              </p>
-              <p className="mb-1 text-xs">
-                6. Terminate the Dialogue: To conclude your conversation, close
-                the tab or window in your web browser. Your dialogue will be
-                saved, allowing you to revisit it at a later time if desired.
+                8. To end the dialogue, close the tab or window in your web
+                browser.
               </p>
             </div>
           </div>
